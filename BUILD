@@ -13,3 +13,22 @@ cc_library(
     deps = [":catch2"],
     alwayslink = True,
 )
+
+# Example unit tests
+# ------------------
+
+cc_test(
+    name = "main-test",
+    srcs = ["tests/catch2_main_test.cpp"],
+    # deps = ["@catch2//:main"], # Use this in your code
+    deps = [":main"],
+    timeout = "short",
+)
+
+cc_test(
+    name = "no-main-test",
+    srcs = ["tests/catch2_no_main_test.cpp"],
+    # deps = ["@catch2//:catch2"], # Use this in your code
+    deps = [":catch2"],
+    timeout = "short",
+)
