@@ -1,7 +1,7 @@
-# catch2_bazel
+# catch2-bazel
 Bazel support for catch2
 
-(*Note*: This is 100% based off of [PlacidBox/catch-bazel](https://github.com/PlacidBox/catch-bazel). All credit to [PlacidBox](https://github.com/PlacidBox/). I initially wanted to update that library with the newest catch, but then realized a new repository was needed so bazel could target either version of catch).
+(*Note*: This code is 100% based off of [PlacidBox/catch-bazel](https://github.com/PlacidBox/catch-bazel). All credit to [PlacidBox](https://github.com/PlacidBox/). I initially wanted to update that library with the newest catch, but then realized a new repository was needed so bazel could target either version of catch with `http_archive`).
 
 Exposes the [Catch2](https://github.com/catchorg/Catch2) testing framework to
 [Bazel](https://bazel.build/).
