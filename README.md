@@ -12,7 +12,7 @@ Add this to your `WORKSPACE` file:
 http_archive(
     name = "catch2",
     url = "https://github.com/evanmoran/catch2-bazel/archive/v2.2.3.tar.gz",
-    strip_prefix = "catch-bazel-2.2.3",
+    strip_prefix = "catch2-bazel-2.2.3",
 )
 ```
 
@@ -22,7 +22,7 @@ Then add `@catch2//:main` to the `deps` on `cc_test` rules, like:
 cc_test(
     name = "my_test",
     srcs = ["my_test.cpp"],
-    deps = ["@catch//:main"],
+    deps = ["@catch2//:main"],
 )
 ```
 
